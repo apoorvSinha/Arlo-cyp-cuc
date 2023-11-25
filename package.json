@@ -1,0 +1,22 @@
+{
+  "name": "arlo",
+  "version": "1.0.0",
+  "description": "The suite contains web UI pages automated via cucumber BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apoorvSinha/Arlo-cyp-cuc.git"
+  },
+  "keywords": [
+    "ring"
+  ],
+  "author": "apoorv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apoorvSinha/Arlo-cyp-cuc/issues"
+  },
+  "homepage": "https://github.com/apoorvSinha/Arlo-cyp-cuc#readme"
+}
