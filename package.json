@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/apoorvSinha/Arlo-cyp-cuc/issues"
   },
-  "homepage": "https://github.com/apoorvSinha/Arlo-cyp-cuc#readme"
+  "homepage": "https://github.com/apoorvSinha/Arlo-cyp-cuc#readme",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "@cypress/browserify-preprocessor": "latest"
+  }
 }
