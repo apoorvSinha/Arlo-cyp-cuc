@@ -27,7 +27,6 @@ When('user hovers over the Products page', function () {
   //good achievement here, we can change the classa value at runtime to make it visible instead of just clicking functionality we are able to cehck hover functionality
   productHover.getProductHoverPage().invoke("attr", "class", "menu-holder-c35 visible-c95").trigger('change' ,{force: true})
   productHover.getOutdoorCams().should('be.visible')
-
 })
 
 Then('user can can see a list of cameras available to buy', function () {
