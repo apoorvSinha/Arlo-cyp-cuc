@@ -4,7 +4,7 @@
   "description": "The suite contains web UI pages automated via cucumber BDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testHome": "npx cypress run --spec cypress/e2e/features/homeVerify.feature --headed"
   },
   "repository": {
     "type": "git",

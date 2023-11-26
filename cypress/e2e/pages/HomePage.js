@@ -1,12 +1,4 @@
 class HomePage{
-    checkHamburgerMenu(){
-        cy.get("div.nav-container-de5 div.logo-toggle-f5a button:nth-child(1)").then(function($el){
-            if($el.is(':visible')){
-                return true
-            }
-            return false
-        })
-    }
     getUrl(){
         return cy.url()
     }
@@ -25,6 +17,19 @@ class HomePage{
     getBusinessSolutionBtn(){
         return cy.get("ul.nav-items-list-fb8 li:nth-child(5)")
     }
+    getLoginBtn(){
+        return cy.get("[aria-label='Log in']")
+    }
+    getSearchBtn(){
+        return cy.get("[aria-label='Search']")
+    }
+    getCareHelpBtn(){
+        return cy.get("a[aria-label='Help']")
+    }
+    getCartBtn(){
+        return cy.get("[aria-label='Cart']")
+    }
+    
 }
 
 export default HomePage
