@@ -24,7 +24,7 @@ Then('user verifies the navbar available options', function () {
 })
 
 When('user hovers over the Products page', function () {
-  //good achievement here, we can change the classa value at runtime to make it visible instead of just clicking functionality we are able to cehck hover functionality
+  //Here, we can change the class value at runtime to make it visible instead of just clicking functionality we are able to check hover functionality
   productHover.getProductHoverPage().invoke("attr", "class", "menu-holder-c35 visible-c95").trigger('change' ,{force: true})
   productHover.getOutdoorCams().should('be.visible')
 })
@@ -34,11 +34,13 @@ Then('user can can see a list of cameras available to buy', function () {
   productHover.getSpotlightCam().should('be.visible')
   productHover.getFllodLigthCam().should('be.visible')
   productHover.getOutdoorAx().should('be.visible')
+  // hide the visibility after work done
+  productHover.getOutdoorCamsVisbility().invoke("attr", "class", "panel-c41").trigger('change' ,{force: true})
 })
 
 When('user hover over the Indoor cams', function(){
-  productHover.getIndoorCams().invoke("attr", "class", "panel-c41 visible-fd8").trigger('change', {force:true})
-  productHover.getIndoorCams().should('be.visible')
+  productHover.getIndoorCamsVisibility().invoke("attr", "class", "panel-c41 visible-fd8").trigger('change', {force:true})
+  productHover.getIndoorCamsVisibility().should('be.visible')
 })
 Then('user can can see a list of Indoor cameras available to buy', function(){
 
