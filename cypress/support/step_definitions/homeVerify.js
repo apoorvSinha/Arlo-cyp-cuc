@@ -30,5 +30,16 @@ When('user hovers over the Products page', function () {
 })
 
 Then('user can can see a list of cameras available to buy', function () {
+  productHover.getStickUpCam().should('be.visible')
+  productHover.getSpotlightCam().should('be.visible')
+  productHover.getFllodLigthCam().should('be.visible')
+  productHover.getOutdoorAx().should('be.visible')
+})
+
+When('user hover over the Indoor cams', function(){
+  productHover.getIndoorCams().invoke("attr", "class", "panel-c41 visible-fd8").trigger('change', {force:true})
+  productHover.getIndoorCams().should('be.visible')
+})
+Then('user can can see a list of Indoor cameras available to buy', function(){
 
 })
