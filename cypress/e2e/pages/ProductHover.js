@@ -18,7 +18,6 @@ class ProductHover{
     getOutdoorAx(){
         return cy.get("div.panel-c41:nth-child(2) div.card-grid-a92 div.card-e9b:nth-child(4) span.title-a23")
     }
-
     //Indoor cams
     getIndoorCams(){
         return cy.get("[aria-label='Indoor Cameras']")
