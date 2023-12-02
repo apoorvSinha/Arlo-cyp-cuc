@@ -7,4 +7,7 @@ Feature: Verification of the nav bar and available option for the neighbour when
     Then user can can see a list of cameras available to buy
     When user hover over the Indoor cams 
     Then user can can see a list of Indoor cameras available to buy
+
+    Scenario: User Looks for Protect plans
+    Given user is able to hover over the Protect plan tab
     

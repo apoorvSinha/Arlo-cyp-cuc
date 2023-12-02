@@ -1,3 +1,3 @@
-before(function(){
+beforeEach(function(){
     cy.visit('https://ring.com/')
   })
