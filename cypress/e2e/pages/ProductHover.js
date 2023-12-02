@@ -26,5 +26,15 @@ class ProductHover{
     getIndoorCamsVisibility(){
         return cy.get("div.submenu-ca9 div.panel-c41:nth-child(3)")
     }
+    getIndoorCam(){
+        return cy.get("div.panel-c41:nth-child(3) div.card-grid-a92 div.card-e9b:nth-child(1) span.title-a23")
+    }
+    getIndoorStickUp(){
+        return cy.get("div.panel-c41:nth-child(3) div.card-grid-a92 div.card-e9b:nth-child(2) span.title-a23")
+    }
+    getIndoorAccessories(){
+        return cy.get("div.panel-c41:nth-child(3) div.card-grid-a92 div.card-e9b:nth-child(3) span.title-a23")
+    }
+
 }
 export default ProductHover

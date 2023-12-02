@@ -43,5 +43,11 @@ When('user hover over the Indoor cams', function(){
   productHover.getIndoorCamsVisibility().should('be.visible')
 })
 Then('user can can see a list of Indoor cameras available to buy', function(){
-
+  // 3 ways assertions
+  productHover.getIndoorCam().should('include.text', 'Indoor')
+  productHover.getIndoorStickUp().should('be.visible')
+  productHover.getIndoorAccessories().then(function($el){
+    expect($el).to.have.text('Accessories')
+  })
+  cy.get('.consent--accept.btn--secondary').click()
 })
