@@ -1,10 +1,10 @@
-import HomePage from "../../e2e/pages/HomePage";
-import ProductHover from "../../e2e/pages/ProductHover";
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-const homepage = new HomePage()
-const productHover = new ProductHover()
+import ProtectPlan from "../../e2e/pages/ProtectPlanHover";
+const protectPlan = new ProtectPlan()
 
 
 Given("user is able to hover over the Protect plan tab", function () {
-    cy.log('we are here to celebrate')
+    protectPlan.getProtectPlanHover().click()
+    protectPlan.getDoorBellsAndCameras().should("include.text", "Doorbells and Cameras")
+    protectPlan.getAlarmPlans().should("include.text", "For Alarms")
 })
