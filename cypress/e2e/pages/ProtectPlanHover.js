@@ -14,5 +14,11 @@ class ProtectPlan{
     getAlarmPlans(){
         return cy.get("[aria-label = 'For Alarms: Learn more'] h2")
     }
+    getCarCamPlans(){
+        return cy.get("[aria-label='For Car Cam: Learn more'] h2")
+    }
+    getVSG(){
+        return cy.get("div.menu-holder-c35.visible-c95  a:nth-child(4)  div:nth-child(1)  h2")
+    }
 }
 export default ProtectPlan
