@@ -4,7 +4,8 @@
   "description": "The suite contains web UI pages automated via cucumber BDD",
   "main": "index.js",
   "scripts": {
-    "testHome": "npx cypress run --spec cypress/e2e/features/homeVerify.feature --headed"
+    "testHome": "npx cypress run --spec cypress/e2e/features/homeVerify.feature --headed",
+    "testLogin": "npx cypress run --spec cypress/e2e/features/logIn.feature --headed"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@cypress/browserify-preprocessor": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}"
   }
 }

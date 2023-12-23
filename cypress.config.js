@@ -24,6 +24,6 @@ module.exports = defineConfig({
     specPattern: 'cypress/e2e/features/*.feature',
     "webSecurity": false,
     viewportHeight: 1080,
-    viewportWidth: 1920,
+    viewportWidth: 1920
   }
 });

@@ -1,5 +1,5 @@
-import HomePage from "../../e2e/pages/HomePage";
-import ProductHover from "../../e2e/pages/ProductHover";
+import HomePage from "../../support/pages/HomePage"
+import ProductHover from "../../support/pages/ProductHover";
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 const homepage = new HomePage()
 const productHover = new ProductHover()
