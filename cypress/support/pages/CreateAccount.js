@@ -14,8 +14,14 @@ class CreateAccount{
     getEmailButton(){
         return cy.get("input[name='email'][type ='email']")
     }
-    getEnabledLoginButton(){
-        return cy.get("[class='continue-button']")
+    getPasswordLabel(){
+        return cy.get("label[for='password']")
+    }
+    getShowPasswordButtonVisibility(){
+        return cy.get("img[class^='show-password']")
+    }
+    getPasswordInput(){
+        return cy.get("input[id='password']")
     }
 }
 
