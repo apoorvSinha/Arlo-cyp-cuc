@@ -23,6 +23,9 @@ class CreateAccount{
     getPasswordInput(){
         return cy.get("input[id='password']")
     }
+    getLoginButtonAfterEnteringCredentials(){
+        return cy.get("div[class='card login'] > button[type='submit']");
+    }
 }
 
 export default CreateAccount;

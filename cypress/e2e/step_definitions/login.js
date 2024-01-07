@@ -16,6 +16,7 @@ Then("user enters the credentials", function(){
     createAcc.getPasswordLabel().should('be.visible')
     createAcc.getShowPasswordButtonVisibility().should('be.visible')
     createAcc.getPasswordInput().type(String(Cypress.env('password')))
+    createAcc.getLoginButtonAfterEnteringCredentials().click()
 })
 
 Then("user verifies the login has been successful", function(){
